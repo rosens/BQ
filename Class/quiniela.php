@@ -10,11 +10,9 @@
 class quiniela
 {
 
-
     public static function generate(){
 
         $arrayQuiniela = array();
-
         $contador1 = 0;
         $contador2 = 0;
         $contadorX = 0;
@@ -53,9 +51,7 @@ class quiniela
 
             $arrayQuiniela[$cont] = $generado;
 
-
             $cont++;
-
 
         }while (($contadorX % 2 != 0) || !($contador1 > $contador2) || ($contador2 < 1) || ($cont < 15));
 
