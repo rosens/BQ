@@ -15,4 +15,6 @@ for ($i = 0; $i < 15; $i++) {
     echo "$quini[$i] <br />";
 }
 
+var_dump($quini);
+
 ?>
