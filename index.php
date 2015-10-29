@@ -11,7 +11,6 @@ include_once('Class/quiniela.php');
 $quini = quiniela::generate();
 
 for ($i = 0; $i < 15; $i++) {
-    $mostrar = $quini[$i];
 
     echo "$quini[$i] <br />";
 }

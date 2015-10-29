@@ -15,7 +15,7 @@ class quinielaTest extends PHPUnit_Framework_TestCase
 
     //Prueba Generate:
     public function testGenerate() {
-        $esperado = array();
+       // $esperado = array();
 
         $this->assertTrue(true);
 
