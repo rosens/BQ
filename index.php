@@ -6,7 +6,7 @@
  * Time: 3:24
  */
 
-include_once('C:/wamp/www/BQProyect/Class/quiniela.php');
+include_once('/Class/quiniela.php');
 
 $quini = quiniela::generate();
 
