@@ -7,8 +7,7 @@
  * Time: 4:03
  */
 
-//Poner ruta absoluta porque sino falla
-require_once ('C:/wamp/www/BQ/Class/quiniela.php');
+require_once ('/Class/quiniela.php');
 
 
 class quinielaTest extends PHPUnit_Framework_TestCase
@@ -21,11 +20,6 @@ class quinielaTest extends PHPUnit_Framework_TestCase
 
         $this->assertInternalType('array', $quiniela);
 
-
-
-
     }
-
-
 
 }
