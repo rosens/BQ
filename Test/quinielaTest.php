@@ -7,22 +7,25 @@
  * Time: 4:03
  */
 
-//require_once('C:/wamp/www/BQProyect/Class/quiniela.php');
-require_once('../Class/quiniela.php');
+//Poner ruta absoluta porque sino falla
+require_once ('C:/wamp/www/BQ/Class/quiniela.php');
+
 
 class quinielaTest extends PHPUnit_Framework_TestCase
 {
 
-    //Prueba Generate:
-    public function testGenerate() {
-       // $esperado = array();
+    //Prueba Generate1:
+    public function testGenerate()
+    {
+        $quiniela = quiniela::generate();
 
-        $contadorX = 0;
-        $contador1 = 0;
-        $contador2 = 0;
+        $this->assertInternalType('array', $quiniela);
 
-        $this->assertTrue(true);
+
+
 
     }
+
+
 
 }
