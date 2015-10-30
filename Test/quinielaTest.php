@@ -18,6 +18,29 @@ class quinielaTest extends PHPUnit_Framework_TestCase
     {
         $quiniela = quiniela::generate();
 
+        $contador1 = 0;
+        $contador2 = 0;
+        $contadorX = 0;
+
+
+        for ($i = 0; $i < count($quiniela); $i++) {
+
+            if ($quiniela[$i] == 1) $contador1++;
+            if ($quiniela[$i] == 2) $contador2++;
+            if ($quiniela[$i] == "X") $contadorX++;
+        }
+
+
+        //Comprueba que haya más unos que doses
+        $this->assertTrue(($contador1 > $contador2));
+
+        //Comprueba que haya al menos un dos
+        $this->assertTrue(($contador2 > 1));
+
+        //Comprueba que haya X pares
+        $this->assertTrue(($contadorX % 2 == 0));
+
+        //Que devuelva array el método
         $this->assertInternalType('array', $quiniela);
 
     }
